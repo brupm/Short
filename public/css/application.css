@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  margin: 100px auto;
+  font-family: Gill Sans / Gill Sans MT, sans-serif;
+  font-size: 14px;
+}
+form input[type="text"], form textarea {
+  padding: 7px;
+  margin: 0px 2px 8px 2px;
+  width: 300px;
+}
+a {
+  color: #1C9900;
+}
+form input {
+  padding: 3px;
+  margin: 0px 2px 9px 2px;
+}
+h1 {
+  color: #1C9900;
+  font-size: 300%;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
+#results {
+  margin: 0 auto;
+  padding: 20px 30px;
+  width: 50%;
+}
+.footer, .footer a  {
+  color: #CC7DB4;
+}
+#home {
+  margin: 0 auto;
+  text-align: left;
+  width: 30%;
+  list-style: none;
+}

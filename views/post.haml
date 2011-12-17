@@ -1,0 +1,9 @@
+%h1#short_url Bopia URL Shortner
+#results
+  %form
+    %textarea#copytext{:readonly => "true"}= "http://#{request.host}/#{short_code}"
+  %p
+    Which links to:
+    %a{:href => url}= "http://#{request.host}/#{short_code}"
+  %p
+    %a{:href => "/s"} Short another one →

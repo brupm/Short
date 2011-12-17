@@ -1,0 +1,5 @@
+%h1#sho Bopia URL Shortner
+#results
+  %form{"accept-charset" => "utf-8", :action => "/short", :method => "post"}
+    %input#url{:name => "url", :type => "text", :placeholder => url || "http://"}
+      %input{:type => "submit", :value => "Make it short"}
