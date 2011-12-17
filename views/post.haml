@@ -4,6 +4,6 @@
     %textarea#copytext{:readonly => "true"}= "http://#{request.host}/#{short_code}"
   %p
     Which links to:
-    %a{:href => url}= "http://#{request.host}/#{short_code}"
+    %a{:href => input_url}= "http://#{request.host}/#{short_code}"
   %p
     %a{:href => "/s"} Short another one →
