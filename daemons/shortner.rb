@@ -26,7 +26,7 @@ end
 get '/:short_code' do
   url = $redis.get("s.bopia.com:#{params[:short_code]}")
   if url.nil?
-    redirect('https://bopia.com')
+    redirect('http://bopia.com')
   else
     dest = url =~ /(^|[^\/])(www\.[^\s@]+(\b|$))/i ? "http://#{url}" : url
     $redis.incr("s.bopia.com:#{params[:short_code]}:hits")
